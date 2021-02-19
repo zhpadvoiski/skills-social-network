@@ -56,6 +56,8 @@ aside img{
     bottom: 20px;
     left: 20px;
     font-size: 1.5em;
+    color: white;
+    font-weight: bold;
 }
 
 /* CONTENT section */
