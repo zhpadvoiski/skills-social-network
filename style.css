@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 *{
     margin: 0;
@@ -13,6 +14,7 @@ body{
 }
 .container{
     max-width: 1000px;
+    min-width: 600px;
     margin: auto;
 }
 aside, main{
@@ -28,8 +30,73 @@ aside{
 main{
     width: 60%;
 }
+i{
+    margin-right: 15px;
+    color: rgb(84, 119, 196);
+    font-size: 1.3em;
+}
+h1, h2, h3{
+    color: rgb(87, 87, 87);
+}
 
 /* ASIDE STYLES */
+/* profile picture */
+.profile-picture{
+    position: relative;
+}
 aside img{
+    display: block;
     width: 100%;
 }
+.name{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5em;
+}
+
+/* CONTENT section */
+/* common info block */
+.content{
+    font-size: 0.8em;
+    color:rgb(63, 63, 63);
+    padding: 10px 20px;
+}
+.common-info .row{
+    margin-bottom: 1.5em;
+}
+.common-info{
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+/* block styles */
+.block{
+    margin-top: 2em;
+}
+.block i{
+    font-size: 1em;
+}
+.skills{
+    margin-top: 1.5em;
+}
+.skill span{
+    display: inline-block;
+    margin-bottom: 1em;
+}
+.skill{
+    margin-bottom: 1em;
+}
+/* range styles */
+.range, .value{
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+.value{
+    text-align: center;
+    background-color: rgb(84, 119, 196);
+    color: white;
+}
+.lang .value{
+    height: 1.5em;
+}
+
+/* MAIN SECTION STYLES */
