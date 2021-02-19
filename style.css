@@ -2,6 +2,7 @@
 body{
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    background-color: rgb(241, 241, 241);
 }
 *{
     margin: 0;
@@ -22,6 +23,7 @@ aside, main{
 }
 aside, main > *{
     box-shadow: 0px 0px 10px rgb(153, 153, 153);
+    background-color: white;
 }
 aside{
     width: 38%;
@@ -35,8 +37,9 @@ i{
     color: rgb(84, 119, 196);
     font-size: 1.3em;
 }
-h1, h2, h3{
+h1, h2, h4{
     color: rgb(87, 87, 87);
+    margin-bottom: 1em;
 }
 
 /* ASIDE STYLES */
@@ -100,3 +103,54 @@ aside img{
 }
 
 /* MAIN SECTION STYLES */
+main .main-block{
+    padding: 1.5em;
+}
+.main-block + .main-block{
+    margin-top: 3%;
+}
+.main-block i{
+    font-size: 1em;
+}
+/* list styles */
+.list h4{
+    font-weight: bold;
+}
+.list-row .date{
+    font-size: 0.9em;
+    color: rgb(84, 119, 196);
+}
+.list-row + .list-row{
+    border-top: 1px solid rgb(235, 235, 235);
+    padding-top: 1.5em;
+}
+.date .current{
+    padding: 2px 4px;
+    background-color: rgb(84, 119, 196);
+    color: white;
+    border-radius: 3px;
+}
+.list-row .content{
+    padding: 1em 0;
+}
+
+/* FOOTER STYLES */
+footer{
+    font-size: 0.7em;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(84, 119, 196);
+}
+footer p{
+    margin: 10px 0;
+}
+footer i{
+    font-size: inherit;
+    color: inherit;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
